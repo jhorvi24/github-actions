@@ -1,5 +1,5 @@
 name: python_file
-run-name: !I'm learning GitHub actions!
+run-name: !learning GitHub actions!
 
 on: [push]
 
