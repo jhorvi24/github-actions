@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v3
-      - name: define variable
+      - name: Definir variable
          run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: execute py code #run holaMundo.py
          run: python holaMundo.py
