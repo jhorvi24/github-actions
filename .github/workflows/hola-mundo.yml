@@ -1,0 +1,15 @@
+name: python_file
+run-name: learning GitHub actions
+
+on: [push]
+
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name:  checkout
+        uses:  actions/checkout@v3
+      - name:  Definir variable
+        run:  echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
+      - name:  execute py code #run holaMundo.py
+        run:  python holaMundo.py
